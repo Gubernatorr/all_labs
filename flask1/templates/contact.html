@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+
+    <!-- CSS Bootstrap CDN Link -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    {% include 'blocks/header.html' %}
+    {% block body %}
+    <h1 style="font-size: 16pt; text-align: center;">You can contact me by these ways:</h1>
+    <p style="font-size: 12pt; text-align: center;">My num: +380456456467</p>
+    <p style="font-size: 12pt; text-align: center;">E-mail: sdfsdgs22@gmail.com</p>
+
+    {% endblock %}
+    {% include 'blocks/footer.html' %}
+    {% include 'blocks/imports.html' %}
+
+</body>
+</html>

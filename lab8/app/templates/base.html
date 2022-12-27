@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+
+    <!-- CSS Bootstrap CDN Link -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    {% include 'includes/header.html' %}
+    {% block body %}
+    <h1 style="font-size: 16pt; text-align: center;">Some useful info</h1>
+    {% endblock %}
+    {% include 'includes/footer.html' %}
+    {% include 'includes/imports.html' %}
+
+</body>
+</html>
